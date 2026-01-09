@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "distribuidora-barbearia",
+  "main": "src/index.tsx",
+  "compatibility_date": "2024-01-01",
+  "pages_build_output_dir": "./dist",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "distribuidora-barbearia-prod",
+      "database_id": "distribuidora-barbearia-prod"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "distribuidora-barbearia-kv",
+      "preview_id": "distribuidora-barbearia-kv-preview"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "distribuidora-barbearia-bucket"
+    }
+  ]
+}
